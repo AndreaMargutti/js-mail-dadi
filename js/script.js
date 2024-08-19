@@ -40,21 +40,30 @@ diceMessage.innerText += winMessage;
 // # Fase di Raccolta Dati
 //Recupero elementi HTML
 const logMessage = document.getElementById('log-message');
-const userMail = document.getElementById('user-email').value;
+const userMail = document.getElementById('user-email');
+const btnLogin = document.getElementById('login-btn');
 
 //creo lista di mail
 
-const mailList = ['marguttiandrea30@gmail.com2', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
+const mailList = ['marguttiandrea30@gmail.com', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
 console.table(mailList);
 
 // # Fase di Elaborazione Dati
 
-for(let i = 0; i < mailList.length; i++) {
-    console.log(mailList[i]);
+btnLogin.addEventListener('click', function(){
+let test = false;
 
-    if (userMail === mailList[i]) {
-        logMessage.innerHTML += 'Accesso Riuscito!'
-    } else {
-        logMessage.innerHTML *= 'Accesso Negato!'
+    for(let i = 0; i < mailList.length; i++) {
+        console.log(mailList[i]);
+        
+        if (userMail.value === mailList[i]) {
+            test = true;
+        }
     }
-}
+    
+    if (test) {
+        logMessage.innerHTML = 'Accesso Riuscito!'
+    } else {
+        logMessage.innerHTML = 'Accesso Negato!'
+    }
+});
