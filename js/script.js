@@ -39,3 +39,9 @@ diceMessage.innerText += winMessage;
 // ! Finto LogIn
 // # Fase di Raccolta Dati
 //Recupero elementi HTML
+const logMessage = document.getElementById('log-message');
+
+//creo lista di mail
+
+const mailList = ['marguttiandrea30@gmail.com2', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
+console.table(mailList);
