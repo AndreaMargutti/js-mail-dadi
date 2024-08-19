@@ -34,3 +34,8 @@ if(userNumber > pcNumber){
 userParagraph.innerText += userNumber;
 cpuParagraph.innerText += pcNumber;
 diceMessage.innerText += winMessage;
+
+
+// ! Finto LogIn
+// # Fase di Raccolta Dati
+//Recupero elementi HTML
