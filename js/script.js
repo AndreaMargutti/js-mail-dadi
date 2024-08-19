@@ -40,8 +40,21 @@ diceMessage.innerText += winMessage;
 // # Fase di Raccolta Dati
 //Recupero elementi HTML
 const logMessage = document.getElementById('log-message');
+const userMail = document.getElementById('user-email').value;
 
 //creo lista di mail
 
 const mailList = ['marguttiandrea30@gmail.com2', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
 console.table(mailList);
+
+// # Fase di Elaborazione Dati
+
+for(let i = 0; i < mailList.length; i++) {
+    console.log(mailList[i]);
+
+    if (userMail === mailList[i]) {
+        logMessage.innerHTML += 'Accesso Riuscito!'
+    } else {
+        logMessage.innerHTML *= 'Accesso Negato!'
+    }
+}
