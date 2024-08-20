@@ -45,7 +45,7 @@ const btnLogin = document.getElementById('login-btn');
 
 //creo lista di mail
 
-const mailList = ['marguttiandrea30@gmail.com', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
+const mailList = ['saragambale@gmail.com', 'pippofranco@virgilio.it', 'giannni22@outlook.it'];
 console.table(mailList);
 
 // # Fase di Elaborazione Dati
