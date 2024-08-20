@@ -61,9 +61,5 @@ let test = false;
         }
     }
     
-    if (test) {
-        logMessage.innerHTML = 'Accesso Riuscito!'
-    } else {
-        logMessage.innerHTML = 'Accesso Negato!'
-    }
-});
+    test ? logMessage.innerHTML = 'Accesso Riuscito!' : logMessage.innerHTML = 'Accesso Negato!'
+})
